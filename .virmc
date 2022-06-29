@@ -1,0 +1,36 @@
+set modelines=0
+
+set nocompatible
+
+set backspace=2
+
+syntax on
+
+set noerrorbells 
+set nu
+set smartindent
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set noswapfile
+set incsearch
+
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/NERDTree'
+	Plug 'preservim/nerdcommenter'
+	Plug 'itchyny/lightline.vim'
+	Plug 'tpope/vim-surround'
+	Plug 'jiangmiao/auto-pairs'
+	Plug 'junegunn/rainbow_parentheses.vim'
+	
+	Plug 'junegunn/fzf' , {'do' : { -> fzf#install() }}
+	Plug 'junegunn/fzf.vim'
+
+	Plug 'tomasr/molokai'
+	Plug 'ghifarit53/tokyonight-vim'
+Plug 'Valloric/YouCompleteMe'
+"Plug 'leafgarland/typescript-vim'
+"Plug 'mbbill/undotree'
+"Plug 'lyuts/vim-rtags'
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+call plug#end()
